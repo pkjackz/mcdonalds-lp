@@ -15,8 +15,8 @@ export default function Home() {
       </div>
 
       <div className="relative z-10 -mt-6 min-h-[calc(100vh-180px)] sm:min-h-[calc(100vh-240px)] md:min-h-[calc(100vh-300px)] flex">
-        <div className="container mx-auto max-w-3xl bg-zinc-200 rounded-t-3xl px-6 py-4 flex flex-col items-center gap-4 min-h-full w-full overflow-y-auto">
-          <div className="flex w-full h-36 bg-black rounded-2xl">
+        <div className="container mx-auto max-w-3xl bg-zinc-200 rounded-t-3xl px-6 py-4 flex flex-col items-center gap-4 min-h-full w-full overflow-y-auto overflow-x-hidden dark:bg-zinc-900">
+          <div className="flex w-screen min-w-full h-36 bg-black rounded-2xl">
             <div className="flex w-12 h-12 bg-red-500 rounded-md items-center justify-center -mb-2">
               <Image
                 src="/mcdonalds-logo-removebg-preview.png"
