@@ -89,7 +89,7 @@ export default function Home() {
               <ChefHat className="inline w-4 h-4 mr-2" />
               Ingredientes
             </h2>
-            <p className="text-sm text-zinc-400 dark:text-zinc-300">
+            <span className="text-sm text-zinc-400 dark:text-zinc-300">
               <ul className="list-disc pl-5 ml-1">
                 <li>Carne bovina</li>
                 <li>Pão com gergelim</li>
@@ -99,7 +99,7 @@ export default function Home() {
                 <li>Picles</li>
                 <li>Molho especial</li>
               </ul>
-            </p>
+            </span>
           </section>
 
           <Button className="w-full py-6 text-md font-semibold rounded-xl bg-[#FFC72C] hover:bg-[#FF671F] transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110">
