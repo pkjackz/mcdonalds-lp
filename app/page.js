@@ -23,7 +23,7 @@ export default function Home() {
                 <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
                     <a
                         className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#FFC72C] px-5 text-background transition-colors hover:bg-[#FFC72C] dark:hover:bg-[#ccc] md:w-[158px]"
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                        href="/order"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -38,7 +38,7 @@ export default function Home() {
                     </a>
                     <a
                         className="flex h-12 w-full items-center justify-center rounded-full bg-foreground text-white border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent   md:w-[162px] text-nowrap"
-                        href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                        href="/order"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
