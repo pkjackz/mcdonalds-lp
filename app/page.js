@@ -1,51 +1,74 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
-    return (
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-            <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-                <Image
-                    className="dark:invert"
-                    src="/mcdonalds-logo-with-logomark.webp"
-                    alt="McDonald's logo"
-                    width={100}
-                    height={20}
-                    priority
-                />
-                <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-                    <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-                        Bem-vindo ao McDonald's! 🍔
-                    </h1>
-                    <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-                        Explore nossos deliciosos hambúrgueres, batatas fritas crocantes e muito mais! Para começar, confira nossos {" Hamburgueres Clássicos "} ou experimente nossas opções de {" Hambúrgueres Especiais "}. Não se esqueça de adicionar uma porção de {" Batatas Fritas "} e uma bebida gelada para completar sua refeição!
-                    </p>
-                </div>
-                <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-                    <a
-                        className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#FFC72C] px-5 text-background transition-colors hover:bg-[#FFC72C] dark:hover:bg-[#ccc] md:w-[158px]"
-                        href="/order"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            className="dark:invert"
-                            src="/vercel.svg"
-                            alt="Vercel logomark"
-                            width={16}
-                            height={16}
-                        />
-                        Pedir agora
-                    </a>
-                    <a
-                        className="flex h-12 w-full items-center justify-center rounded-full bg-foreground text-white border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent   md:w-[162px] text-nowrap"
-                        href="/menu"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Conferir o cardápio
-                    </a>
-                </div>
-            </main>
+  return (
+    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <div className="container w-screen max-w-3xl px-4 py-8 flex flex-col items-center gap-4">
+        <div className="flex w-12 h-12 bg-red-500 rounded-md items-center justify-center -mb-2">
+          <Image
+            src="/mcdonalds-logo-removebg-preview.png"
+            alt="McDonald's logo"
+            width={8}
+            height={8}
+            className="dark:invert min-h-8 min-w-8"
+          />
         </div>
-    );
+        <h1 className="text-sm font-bold text-center text-[#27251F] dark:text-white">
+          FSW Donald's
+        </h1>
+
+        <h1 className="text-2xl font-bold text-center text-[#27251F] dark:text-white">
+          Seja bem-vindo!
+        </h1>
+
+        <span className="text-center text-sm text-[#a1a1a1] dark:text-zinc-700 max-w-md">
+          Escolha como prefere aproveitar sua refeição. Estamos aqui para
+          oferecer praticidade e sabor em cada detalhe!
+        </span>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-md mt-8">
+          <div className="group cursor-pointer rounded-2xl border-2 border-zinc-400 bg-white dark:bg-zinc-900 p-6 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:border-red-500">
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src="/mcoferta-removebg-preview.png"
+                alt="Para comer aqui"
+                width={140}
+                height={140}
+                className="object-contain transition-transform duration-300 group-hover:scale-110"
+              />
+
+              <Button
+                variant="outline"
+                size="lg"
+                className="w-full border-red-500 text-red-600 hover:bg-red-500 hover:text-white"
+              >
+                Para comer aqui
+              </Button>
+            </div>
+          </div>
+
+          <div className="group cursor-pointer rounded-2xl border-2 border-zinc-400 bg-white dark:bg-zinc-900 p-6 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:border-yellow-500">
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src="/mcoferta-removebg-preview.png"
+                alt="Para levar"
+                width={140}
+                height={140}
+                className="object-contain transition-transform duration-300 group-hover:scale-110"
+              />
+
+              <Button
+                variant="outline"
+                size="lg"
+                className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-white"
+              >
+                Para levar
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
