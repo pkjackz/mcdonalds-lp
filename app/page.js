@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -31,19 +32,22 @@ export default function Home() {
                     <div className="group cursor-pointer rounded-2xl border-2 border-zinc-400 bg-white dark:bg-zinc-900 p-6 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:border-red-500">
                         <div className="flex flex-col items-center gap-4">
                             <Image
-                                src="/burguer.png"
+                                src="/burguer2.png"
                                 alt="Para comer aqui"
-                                width={140}
-                                height={140}
+                                width={250}
+                                height={250}
                                 className="object-contain transition-transform duration-300 group-hover:scale-110"
                             />
 
                             <Button
+                                asChild
                                 variant="outline"
                                 size="lg"
-                                className="w-full border-red-500 text-red-600 hover:bg-red-500 hover:text-white"
+                                className="w-full border-zinc-400 hover:border-red-500 text-red-600 hover:bg-red-500 hover:text-white cursor-pointer"
                             >
-                                Comer agora
+                                <Link href="/order">
+                                    Comer agora
+                                </Link>
                             </Button>
                         </div>
                     </div>
@@ -59,11 +63,14 @@ export default function Home() {
                             />
 
                             <Button
+                                asChild
                                 variant="outline"
                                 size="lg"
-                                className="w-full border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-white"
+                                className="w-full hover:border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-white cursor-pointer"
                             >
-                                Ver menu
+                                <Link href="/menu">
+                                    Ver Menu
+                                </Link>
                             </Button>
                         </div>
                     </div>
