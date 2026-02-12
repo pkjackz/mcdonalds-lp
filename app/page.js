@@ -32,7 +32,7 @@ export default function Home() {
                     <div className="group cursor-pointer rounded-2xl border-2 border-zinc-400 bg-white dark:bg-zinc-900 p-6 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:border-red-500">
                         <div className="flex flex-col items-center gap-4">
                             <Image
-                                src="/burguer2.png"
+                                src="/burguer.jpg"
                                 alt="Para comer aqui"
                                 width={250}
                                 height={250}
