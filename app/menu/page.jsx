@@ -45,7 +45,7 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-200 dark:bg-black flex flex-col relative">
       <button
         onClick={goBack}
-        className="fixed top-4 left-4 z-50 bg-[#FFC72C] text-[#27251F] p-2 rounded-full shadow-lg hover:scale-125 transition ease-linear"
+        className="fixed top-4 left-4 z-50 bg-[#FFC72C] text-[#27251F] p-2 rounded-full shadow-lg hover:scale-125 transition ease-linear cursor-pointer"
       >
         <ArrowLeft size={20} />
       </button>
